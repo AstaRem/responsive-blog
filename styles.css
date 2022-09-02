@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #F8F8F8;
+    padding: 2em 0;
+    text-align: center;
+
+}
+
+h1 {
+    color:#143774;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    color: #1792D2;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: .75rem;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+
+ul {
+    color: #707070;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding:0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+/*we do NOT need to do: nav ul li a*/
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792D2;
+}
+
+.current-page {
+    border-bottom: 2px solid #707070;
+}
+
+.current-page:hover,
+.current-page:focus {
+    color: #707070;
+}
+
+@media screen and (max-width: 400px){  /*smaller and up to 400*/
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        margin-top: 1.5rem;
+    }
+}
+
+/* between 400 and 710 general styles are working, as I did it from medium screen to small and then to big*/
+
+@media screen and (min-width: 710px){ /*from 710 and bigger*/
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .container-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    header {
+        text-align: left;
+    }
+}
+
