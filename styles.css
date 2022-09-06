@@ -12,6 +12,13 @@ img {
     display: block;
 }
 
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
 /* =========
 Typography 
 ============*/
@@ -29,6 +36,15 @@ h1 {
     font-size: 2rem;
     margin-bottom: 0;
 }
+
+.h3-article {
+    color: #1792d2;
+}
+
+.p-height {
+    line-height: 1.5rem; 
+}
+
 
 a:hover,
 a:focus
